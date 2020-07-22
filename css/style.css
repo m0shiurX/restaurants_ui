@@ -1,0 +1,120 @@
+:root{
+    --primary: #060;
+    --primary-alt: #042900;
+}
+
+body {
+    min-width: 370px;
+}
+
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-primary:hover {
+    background-color: var(--primary-alt);
+    border-color: var(--primary-alt);
+}
+
+.form-control:focus {
+    border-color: rgba(0, 102, 0 , .5);
+    box-shadow: 0 0 0 0.2rem rgba(0,102,0, .3);
+}
+
+.bg-dark-primary {
+    background-color: var(--primary-alt);
+}
+.bg-primary {
+    background-color: var(--primary)!important;
+    color: #fff;
+}
+.shadow-sm {
+    box-shadow: .115rem .325rem .25rem rgba(0,0,0,.075), -.115rem -.325rem .25rem rgba(0,0,0,.075)!important;
+}
+
+
+
+
+.landing_page {
+    height: 60vh;
+    min-height: 700px;
+    color: #fff;
+    background: #1e1e1e;
+    background-image: url('../img/header_bg.jpg');
+    background-size: cover;
+    background-position: right center;
+    position: relative;
+    z-index: 0;
+}
+.landing_page::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgb(30 30 30 / .5);
+    z-index: -1;
+}
+
+header a {
+    color: #fff;
+}
+
+header a:hover {
+    color: var(--primary);
+}
+.phone_no {
+    font-size: .8em;
+    font-weight: 400;
+}
+
+.header-input {
+    background-clip: border-box;
+}
+
+.top_rated_btn{
+    left: 25px;
+    bottom: 15px;
+}
+
+
+/* Footer */
+.footer-list-item {
+    display: inline-flex;
+    padding: .75rem 1.25rem .75rem 0;
+}
+
+/* Restaurants */
+.download_icon {
+    width: 90px;
+}
+
+.navbar-logo {
+    width: 150px;
+}
+.hero_logo {
+    width: 250px;
+}
+.min-header {
+    background-color: var(--primary-alt);
+}
+
+.card_separator {
+    border-top: 3px solid #ddd;
+}
+
+.restaurant_card {
+    margin-bottom: 2rem;
+}
+/* Pagination */
+.page-link {
+    color: var(--primary)!important;
+    border-radius: .25rem;
+    
+}
+.page-item.active .page-link {
+    background-color: var(--primary)!important;
+    border-color: var(--primary)!important;
+    color: #fff!important;
+}
